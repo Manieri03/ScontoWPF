@@ -31,7 +31,7 @@ namespace ScontoWPF
             double percSconto = 0;
             if (txtScontoperc.Text.Length > 0)
                 percSconto= double.Parse(txtScontoperc.Text); 
-            double sconto = importo  / 100 * percSconto;
+            double sconto = importo  / 100 * percSconto; 
             txtSconto.Text = String.Format("{0:C}", sconto);
 
             double percIVA = double.Parse(txtIVAperc.Text);
